@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<script>
-var preload = document.createElement('div');
 
-preload.className = "preloader";
+    <script>
+        var preload = document.createElement('div');
 
-preload.innerHTML = '<div class="b-ico-preloader"></div><div class="spinner"></div>';
+        preload.className = "preloader";
 
-document.body.appendChild(preload);
-window.addEventListener('load', function() {
+        preload.innerHTML = '<div class="b-ico-preloader"></div><div class="spinner"></div>';
 
-preload.className += ' fade';
+        document.body.appendChild(preload);
+        window.addEventListener('load', function () {
 
-setTimeout(function(){
+            preload.className += ' fade';
 
-preload.style.display = 'none';
+            setTimeout(function () {
 
-},1600);
+                preload.style.display = 'none';
 
-})
-</script>
+            }, 1600);
+
+        })
+    </script>
     <div class="header">
         <div class="wrapper">
             <div class="navigation">
@@ -39,30 +45,32 @@ preload.style.display = 'none';
                     <li><a href="">Community</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Contact us</a></li>
-                </ul> 
+                </ul>
             </div>
-          
+
         </div>
     </div>
     <div class="banner">
         <div class="wrapper">
-        <h1 class="title">Create your own time</h1>
-        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy since the 1500s. </p>
-        <a class="btn" href="">Read more</a>
-      
+            <h1 class="title">Plan your own time</h1>
+            <p class="description">How to plan your day to keep up with everything? What rules should be followed to
+                avoid stress and feelings of dissatisfaction? In our company you will learn what you need to do to
+                increase your productivity and efficiency. </p>
+            <a id="bt" class="btn" href="#" >Read more</a>
+
         </div>
     </div>
     <div class="page">
         <div class="wrapper">
-            <div class="center"> 
+            <div class="center">
                 <h2 class="h2">How to progress?</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <p>Just a few simple steps</p>
             </div>
             <ul class="menu">
-                <li><a class="active" href="">Cartoon</a></li>
-                <li><a href="">Cartoon</a></li>
-                <li><a href="">Cartoon</a></li>
-                <li><a href="">Cartoon</a></li>
+                <li><a class="active" href="">Daily planner</a></li>
+                <li><a href="">Reminder</a></li>
+                <li><a href="">Wake up early</a></li>
+                <li><a href="">Limit time before TV</a></li>
             </ul>
             <div class="box">
                 <div class="box-item">
@@ -97,6 +105,33 @@ preload.style.display = 'none';
             <p>@2020 graphics resources</p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script src="js/popup.js"></script>
+    <div class="swal-overlay" tabindex="-1">
 
+
+        <div class="swal-modal" role="dialog" aria-modal="true">
+            <div class="swal-title" style>Да это же скидка на целых 45%!</div>
+            <div class="swal-text" style>Успейте купить наш майонез, пока он совсем не просрочился!</div>
+            <div class="swal-footer">
+                <div class="swal-button-container">
+
+                    <button class="swal-button swal-button--confirm">OK</button>
+
+                    <div class="swal-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
 </body>
+
 </html>
