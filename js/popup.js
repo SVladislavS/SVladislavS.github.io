@@ -1,11 +1,13 @@
 var button = document.getElementById("bt");
 button.addEventListener('click', function() {
     swal({
-        title: "Да это же скидка на целых 45%!",
-        text: "Успейте купить наш майонез, пока он совсем не просрочился!",
-        value: true,
-        visible: true,
-        className: "",
-        closeModal: true,
-    });
+  imageUrl: 'https://image.flaticon.com/icons/svg/929/929416.svg',
+  imageWidth: 400,
+  imageHeight: 200,
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: "<a href=#>Why do I have this issue?</a>"
+})
 });
+
+
